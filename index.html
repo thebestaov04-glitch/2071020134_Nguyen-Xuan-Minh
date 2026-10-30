@@ -6,6 +6,7 @@
   <!-- ✏️ Thay [Họ tên SV] bằng tên thật của bạn -->
   <title>Portfolio Nguyễn Xuân Minh</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="hiệu ứng.js" defer></script>
 </head>
 <body>
 
@@ -34,6 +35,9 @@
         <li role="presentation"><button id="tab-skills" type="button" role="tab" aria-controls="ky-nang" aria-selected="false" tabindex="-1">Kỹ năng</button></li>
         <li role="presentation"><button id="tab-projects" type="button" role="tab" aria-controls="du-an" aria-selected="false" tabindex="-1">Dự án</button></li>
       </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">
+        🌙
+      </button>
     </div>
   </nav>
 
@@ -46,7 +50,7 @@
     <!-- Câu 3: Thẻ chia phần logic -->
     <section id="gioi-thieu" class="hero" role="tabpanel" aria-labelledby="tab-home" tabindex="0">
       <span class="hero__tech-frame" aria-hidden="true"></span>
-      <img class="hero__avatar" src="assets/images/avatar.jpg" alt="Ảnh đại diện của Nguyễn Xuân Minh">
+      <img class="hero__avatar" src="assets/images/avatar.jpg" alt="Ảnh đại diện của Nguyễn Xuân Minh" draggable="false">
       <!-- ✏️ Thay [Họ tên SV] bằng tên thật -->
       <h1>Xin chào, tôi là <span class="hero__name">Nguyễn Xuân Minh</span></h1>
       <!-- ✏️ Thay [Quê quán] bằng quê thật, ví dụ: Hà Nội, Thanh Hóa... -->
@@ -102,7 +106,7 @@
 
         <!-- Câu 4: Thẻ cho mỗi project card -->
         <article class="card">
-          <img src="assets/images/dự án cá nhân.jpg"
+          <img src="assets/images/dự án cá nhân.jpg" draggable="false"
                alt="Ảnh minh họa dự án StudyFlow" class="card__img">
           <div class="card__body">
             <!-- ✏️ Thay tên và mô tả dự án -->
@@ -113,7 +117,7 @@
         </article>
 
         <article class="card">
-          <img src="assets/images/bài portfolio cá nhân.jpg"
+          <img src="assets/images/bài portfolio cá nhân.jpg" draggable="false"
                alt="Ảnh bài Portfolio cá nhân" class="card__img">
           <div class="card__body">
             <h3>Bài Portfolio cá nhân </h3>
@@ -123,7 +127,7 @@
         </article>
 
         <article class="card">
-          <img src="assets/images/Bài tập ứng dụng AI.jpg"
+          <img src="assets/images/Bài tập ứng dụng AI.jpg" draggable="false"
                alt="Ảnh bài tập ứng dụng AI trong học tập" class="card__img">
           <div class="card__body">
             <h3>Bài tập Ứng dụng AI trong học tập</h3>
