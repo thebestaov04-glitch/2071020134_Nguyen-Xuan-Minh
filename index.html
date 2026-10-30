@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ✏️ Thay [Họ tên SV] bằng tên thật của bạn -->
+  <title>Portfolio Nguyễn Xuân Minh</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================================
+       BÀI TẬP A2.1 – FIT4014
+       Starter Code – Điền vào các chỗ (_____)
+
+       📌 HƯỚNG DẪN:
+       1. Làm phần trắc nghiệm trên PDF trước
+       2. Điền đáp án vào đúng vị trí trong file này
+       3. Thay tất cả [Họ tên SV], [Quê quán],
+          [Sở thích], [Mô tả bản thân] bằng thông tin thật
+       4. Xem bảng màu theo 2 số cuối MSSV trong PDF
+       ======================================== -->
+
+  <!-- ===== PHẦN 1: NAVIGATION =====
+       Câu 1: Dùng đúng thẻ ngữ nghĩa cho thanh điều hướng -->
+
+  <nav class="nav">
+    <div class="nav__container">
+      <!-- ✏️ Thay [Họ tên SV] bằng tên thật -->
+      <a href="#gioi-thieu" class="nav__logo" data-tab-link>Nguyễn Xuân Minh</a>
+      <ul class="nav__menu" role="tablist" aria-label="Các trang nội dung">
+        <li role="presentation"><button id="tab-home" type="button" role="tab" aria-controls="gioi-thieu" aria-selected="true" tabindex="0">Trang chủ</button></li>
+        <li role="presentation"><button id="tab-about" type="button" role="tab" aria-controls="ve-toi" aria-selected="false" tabindex="-1">Về tôi</button></li>
+        <li role="presentation"><button id="tab-skills" type="button" role="tab" aria-controls="ky-nang" aria-selected="false" tabindex="-1">Kỹ năng</button></li>
+        <li role="presentation"><button id="tab-projects" type="button" role="tab" aria-controls="du-an" aria-selected="false" tabindex="-1">Dự án</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== PHẦN 2: NỘI DUNG CHÍNH =====
+       Câu 2: Bọc toàn bộ nội dung chính -->
+
+  <main>
+
+    <!-- --- Hero --- -->
+    <!-- Câu 3: Thẻ chia phần logic -->
+    <section id="gioi-thieu" class="hero" role="tabpanel" aria-labelledby="tab-home" tabindex="0">
+      <span class="hero__tech-frame" aria-hidden="true"></span>
+      <img class="hero__avatar" src="assets/images/avatar.jpg" alt="Ảnh đại diện của Nguyễn Xuân Minh">
+      <!-- ✏️ Thay [Họ tên SV] bằng tên thật -->
+      <h1>Xin chào, tôi là <span class="hero__name">Nguyễn Xuân Minh</span></h1>
+      <!-- ✏️ Thay [Quê quán] bằng quê thật, ví dụ: Hà Nội, Thanh Hóa... -->
+      <p class="hero__desc">Sinh viên ngành CNTT – Đại học Đại Nam | Quê: Xã Bình Minh, thành phố Hà Nội</p>
+      <a href="#du-an" class="btn" data-tab-link>Xem dự án của tôi</a>
+    </section>
+
+    <!-- --- Giới thiệu bản thân --- -->
+    <section id="ve-toi" class="about" role="tabpanel" aria-labelledby="tab-about" tabindex="0" hidden>
+      <h2 class="section-title">Về tôi</h2>
+      <div class="about__content">
+        <!-- ✏️ Viết 2-3 câu giới thiệu bản thân (sở thích, mục tiêu nghề nghiệp...) -->
+        <p class="about__text"><b>Tôi là sinh viên năm nhất ngành Công nghệ thông tin tại Trường Đại học Đại Nam. Tôi yêu thích lập trình và võ thuật hiện đại, đặc biệt là Taekwondo và boxing.</b>
+        </p>
+        <ul class="about__info">
+          <!-- ✏️ Điền thông tin cá nhân thật -->
+          <li><strong>Họ tên:</strong> Nguyễn Xuân Minh</li>
+          <li><strong>MSSV:</strong> 2071020134</li>
+          <li><strong>Quê quán:</strong> xã Bình Minh, thành phố Hà Nội </li>
+          <li><strong>Sở thích:</strong> Lập trình và võ thuật hiện đại (Taekwondo và Boxing)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- --- Skills --- -->
+    <section id="ky-nang" class="skills" role="tabpanel" aria-labelledby="tab-skills" tabindex="0" hidden>
+      <h2 class="section-title">Kỹ năng</h2>
+      <div class="skills__grid">
+        <!-- ✏️ Thay nội dung 3 kỹ năng theo thế mạnh thật của bạn -->
+        <div class="skill-card">
+          <span class="skill-card__icon">🌐</span>
+          <!-- ✏️ Thay tên và mô tả kỹ năng -->
+          <h3>Tư duy</h3>
+          <p><b>Mô tả:</b> biết cách ứng biến với môi trường xung quanh, bình tĩnh giải quyết tình huống.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-card__icon">🎨</span>
+          <h3>Sáng tạo</h3>
+          <p><b>Mô tả: </b>có những ý tưởng đột phá trong nhiều lĩnh vực khác nhau (Lập trình web, thuật toán công nghệ).</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-card__icon">📱</span>
+          <h3>Sử dụng công nghệ</h3>
+          <p><b>Mô tả: </b>thành thạo việc dùng máy tính trong lĩnh vực văn phòng và lập trình.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- Projects --- -->
+    <section id="du-an" class="projects" role="tabpanel" aria-labelledby="tab-projects" tabindex="0" hidden>
+      <h2 class="section-title">Dự án</h2>
+      <div class="projects__grid">
+
+        <!-- Câu 4: Thẻ cho mỗi project card -->
+        <article class="card">
+          <img src="assets/images/dự án cá nhân.jpg"
+               alt="Ảnh minh họa dự án StudyFlow" class="card__img">
+          <div class="card__body">
+            <!-- ✏️ Thay tên và mô tả dự án -->
+            <h3>StudyFlow quản lý thời gian cá nhân</h3>
+            <p><b>Mô tả: </b> đây là dự án cá nhân xây dựng trang web quản lý lịch trình cá nhân, tích hợp các chức năng điều chỉnh giờ và nhóm nhiệm vụ.</p>
+            <p><b>[HTML] [CSS] [JAVASCRIPT]</b></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/bài portfolio cá nhân.jpg"
+               alt="Ảnh bài Portfolio cá nhân" class="card__img">
+          <div class="card__body">
+            <h3>Bài Portfolio cá nhân </h3>
+            <p><b>Mô tả: </b>đây là bài tập portfolio của môn học Kỹ năng mềm, xây dựng bài báo cáo quá trình của bản thân trong thời gian học từ đầu đến cuối buổi.</p>
+            <p><b>[Canva] [PDF]</b></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/Bài tập ứng dụng AI.jpg"
+               alt="Ảnh bài tập ứng dụng AI trong học tập" class="card__img">
+          <div class="card__body">
+            <h3>Bài tập Ứng dụng AI trong học tập</h3>
+            <p><b>Mô tả: </b>bài tập môn học Nhập môn Công nghệ thông tin, thiết kế trang Powerpoint về chủ đề Ứng dụng AI trong học tập và công việc.</p>
+            <p><b>[POWERPOINT]</b></p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PHẦN 3: FOOTER =====
+       Câu 5: Thẻ chân trang -->
+  <footer class="footer">
+    <!-- ✏️ Thay [Họ tên SV] và [MSSV] -->
+    <p>&copy; 2026 Nguyễn Xuân Minh – 2071020134 – FIT4014 Đại học Đại Nam</p>
+  </footer>
+
+  <script>
+    const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
+
+    function activateTab(tab, moveFocus = false) {
+      tabs.forEach((currentTab) => {
+        const isSelected = currentTab === tab;
+        currentTab.setAttribute("aria-selected", String(isSelected));
+        currentTab.tabIndex = isSelected ? 0 : -1;
+        document.getElementById(currentTab.getAttribute("aria-controls")).hidden = !isSelected;
+      });
+
+      if (moveFocus) tab.focus();
+    }
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener("click", (event) => {
+        event.preventDefault();
+        activateTab(tab);
+      });
+
+      tab.addEventListener("keydown", (event) => {
+        let nextIndex = index;
+        if (event.key === "ArrowRight") nextIndex = (index + 1) % tabs.length;
+        else if (event.key === "ArrowLeft") nextIndex = (index - 1 + tabs.length) % tabs.length;
+        else if (event.key === "Home") nextIndex = 0;
+        else if (event.key === "End") nextIndex = tabs.length - 1;
+        else return;
+
+        event.preventDefault();
+        activateTab(tabs[nextIndex], true);
+      });
+    });
+
+    document.querySelectorAll("[data-tab-link]").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        const targetTab = tabs.find((tab) => tab.getAttribute("aria-controls") === link.hash.slice(1));
+        if (!targetTab) return;
+
+        event.preventDefault();
+        activateTab(targetTab);
+      });
+    });
+  </script>
+
+</body>
+</html>
